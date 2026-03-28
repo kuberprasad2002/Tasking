@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+          <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+          <head>
+                    <link rel="stylesheet"
+                              href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+          </head>
+          <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+</head>
+
+<body>
+          <img src="images/task.png" class="lg:w-6/12  w-full lg:h-auto h-[150px] lg:fixed left-0 top-0 object-cover">
+          <div class="lg:w-6/12 lg:ml-[50%] lg:p-12 p-8 space-y-8">
+                    <div class="flex items-center justify-center gap-2">
+                              <i class="ri-edit-circle-fill text-5xl text-indigo-600 mt-1"></i>
+                              <h1 class="text-4xl font-bold ">Task<span class="text-indigo-600">ing</span></h1>
+                    </div>
+                    <div class="flex lg:flex-row flex-col gap-6 lg:items-center">
+                              <input oninput="filter(this)"class="px-3 py-2 border border-gray-200 flex-1" placeholder="search this list rounded ">
+                              <button class="bg-indigo-500 px-8 py-2 text-white font-medium hover:bg-indigo-600 rounded"  onclick="openDilog()">
+                                        <i class="ri-add-line"></i>
+                                        Next Task
+                              </button>
+                    </div>
+                    <table class="w-full">
+                              <tr class="bg-slate-300 text-left">
+                                        <th class="p-3">SN</th>
+                                        <th class="p-3">Task</th>
+                                        <th class="p-3">Date</th>
+                                        <th class="p-3">Status</th>
+                                        <th class="p-3">actions</th>
+                              </tr>
+                         
+                              <tbody id="ui-container">
+
+                              </tbody>
+                    </table>
+          </div>
+
+
+          <script src="script.js"></script>
+        
+</body>
+
+</html>
